@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "The Little Mermaid",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Popular",
+    "description": "A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs."
+  },
+  {
+    "id": 2,
+    "title": "Ariel's Adventure",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Popular",
+    "description": "Follow Ariel's underwater adventures in this magical tale."
+  },
+  {
+    "id": 3,
+    "title": "Under the Sea",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Popular",
+    "description": "Discover the wonders of the ocean kingdom."
+  },
+  {
+    "id": 4,
+    "title": "Mermaid Tales",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Popular",
+    "description": "Classic fairy tale brought to life with stunning visuals."
+  },
+  {
+    "id": 5,
+    "title": "Ocean Dreams",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Popular",
+    "description": "A magical journey beneath the waves."
+  },
+  {
+    "id": 6,
+    "title": "65",
+    "image": "movies/65.jpg",
+    "category": "Action",
+    "description": "An astronaut crash lands on a mysterious planet only to discover he's not alone."
+  },
+  {
+    "id": 7,
+    "title": "Space Warrior",
+    "image": "movies/65.jpg",
+    "category": "Action",
+    "description": "Epic space battles and alien encounters."
+  },
+  {
+    "id": 8,
+    "title": "Planet X",
+    "image": "movies/65.jpg",
+    "category": "Action",
+    "description": "Survival on a dangerous alien world."
+  },
+  {
+    "id": 9,
+    "title": "Galactic Hero",
+    "image": "movies/65.jpg",
+    "category": "Action",
+    "description": "One man's fight against impossible odds."
+  },
+  {
+    "id": 10,
+    "title": "The Covenant",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Drama",
+    "description": "A US Army Sergeant and his interpreter fight to survive."
+  },
+  {
+    "id": 11,
+    "title": "War Stories",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Drama",
+    "description": "Tales of courage and brotherhood in wartime."
+  },
+  {
+    "id": 12,
+    "title": "Brothers in Arms",
+    "image": "movies/the-little-mermaid.jpeg",
+    "category": "Drama",
+    "description": "A story of loyalty and sacrifice."
+  }
+]

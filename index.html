@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star AI Code Editor - AI-Powered Development Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <h1 class="ai-logo">Star AI Code Editor</h1>
+                <p>AI-Powered Development Platform</p>
+            </div>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="Username" class="input-field">
+                <input type="password" id="password" placeholder="Password" class="input-field">
+                <button onclick="login()" class="login-btn">Access AI Editor</button>
+                <div class="biometric-login">
+                    <button class="bio-btn"><i class="fas fa-fingerprint"></i></button>
+                    <button class="bio-btn"><i class="fas fa-eye"></i></button>
+                    <button class="bio-btn"><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainApp" class="main-app hidden">
+        <nav class="navbar">
+            <div class="nav-brand">Star AI Code Editor</div>
+            <div class="nav-menu">
+                <a href="#" onclick="showPage('dashboard')">Dashboard</a>
+                <a href="#" onclick="showPage('editor')">AI Editor</a>
+                <a href="#" onclick="showPage('neural')">Neural Networks</a>
+                <a href="#" onclick="showPage('models')">AI Models</a>
+                <a href="#" onclick="showPage('data')">Data Science</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </nav>
+
+        <div id="dashboard" class="page active">
+            <div class="dashboard-grid">
+                <div class="ai-card">
+                    <h3>AI Code Generator</h3>
+                    <p>Generate code using advanced AI</p>
+                    <button onclick="showPage('editor')">Launch Editor</button>
+                </div>
+                <div class="ai-card">
+                    <h3>Neural Networks</h3>
+                    <p>Build and train neural networks</p>
+                    <button onclick="showPage('neural')">Open Neural Lab</button>
+                </div>
+                <div class="ai-card">
+                    <h3>AI Models</h3>
+                    <p>Pre-trained AI models library</p>
+                    <button onclick="showPage('models')">Browse Models</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="editor" class="page">
+            <div class="editor-container">
+                <div class="editor-toolbar">
+                    <button class="tool-btn" onclick="runCode()"><i class="fas fa-play"></i> Run Code</button>
+                    <button class="tool-btn" onclick="askAI()"><i class="fas fa-robot"></i> Ask AI</button>
+                    <button class="tool-btn" onclick="generateCode()"><i class="fas fa-magic"></i> Generate</button>
+                    <button class="tool-btn" onclick="saveCode()"><i class="fas fa-save"></i> Save</button>
+                    <select class="language-select">
+                        <option>Python</option>
+                        <option>JavaScript</option>
+                        <option>Java</option>
+                        <option>C++</option>
+                    </select>
+                </div>
+                <div class="editor-layout">
+                    <div class="code-editor">
+                        <textarea id="codeArea" placeholder="# Welcome to Star AI Code Editor
+# Start coding with AI assistance...
+
+# Python Example
+print('Hello from Star AI!')
+
+# JavaScript Example  
+// console.log('Star AI Code Editor');
+
+# Ask AI anything in the chat!"></textarea>
+                        <div id="codeOutput" class="code-output">
+                            <h4>Output:</h4>
+                            <div id="outputContent">Run your code to see output here...</div>
+                        </div>
+                    </div>
+                    <div class="ai-assistant">
+                        <h4>AI Assistant</h4>
+                        <div class="ai-chat" id="aiChat">
+                            <div class="ai-message">🌟 Star AI: How can I help you code today?</div>
+                        </div>
+                        <input type="text" id="aiInput" placeholder="Ask AI anything..." class="ai-input" onkeypress="handleAIInput(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="neural" class="page">
+            <div class="neural-lab">
+                <h2>Neural Network Laboratory</h2>
+                <div class="neural-grid">
+                    <div class="neural-card">
+                        <h4>CNN - Image Recognition</h4>
+                        <div class="neural-viz"></div>
+                        <button>Train Model</button>
+                    </div>
+                    <div class="neural-card">
+                        <h4>RNN - Text Generation</h4>
+                        <div class="neural-viz"></div>
+                        <button>Train Model</button>
+                    </div>
+                    <div class="neural-card">
+                        <h4>GAN - Image Generation</h4>
+                        <div class="neural-viz"></div>
+                        <button>Train Model</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="models" class="page">
+            <div class="models-library">
+                <h2>AI Models Library</h2>
+                <div class="models-grid" id="modelsGrid"></div>
+            </div>
+        </div>
+
+        <div id="data" class="page">
+            <div class="data-science">
+                <h2>Data Science Lab</h2>
+                <div class="data-tools">
+                    <div class="tool-card">
+                        <h4>Data Visualization</h4>
+                        <canvas id="dataChart"></canvas>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Machine Learning</h4>
+                        <div class="ml-controls">
+                            <button>Linear Regression</button>
+                            <button>Random Forest</button>
+                            <button>SVM</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
